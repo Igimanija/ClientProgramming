@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class1</title>
+    <style>
+        p{
+            color:red;
+        }
+        n{
+            color:blue;
+            font-size: 24px;
+        }
+        #test{
+            font-size: 24px;
+        }
+    </style>
+        <script type="text/javascript">
+            function init() {
+                var element = document.getElementById("test");
+                element.style.color = "purple";
+                x = 10;
+                x = x+1;
+                var x;
+                console.log(x);
+
+                var test = 'version1';
+                function fun(){
+                   test = "version2";
+                }
+                fun();
+                console.log(test);
+
+                var myArr = new Array('one', 'two', 'three');
+                myArr['tip1'] = "top";
+                myArr['tip2'] = "top2";
+
+                for(i=0; i<myArr.length;i++){
+                    console.log(myArr[i]);
+                    console.log(i);
+                }
+                console.log(myArr.length);
+            }
+        </script>
+</head>
+<body onload="init();">
+    <p>Hello</p>
+    <n>Hello2</>
+    <p id="test">test1</p>
+    <p id="test">test2</p>
+    <p id="test">test3</p>
+</body>
+</html>
