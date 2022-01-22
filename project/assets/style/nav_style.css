@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dongle:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+  font-family: "Dongle", sans-serif;
+}
+
+#logo {
+  height: 48px;
+  width: 68px;
+  background-color: lightgreen;
+  margin: 8px;
+}
+nav {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 60px;
+  font-size: 36px;
+  margin-right: 12px;
+}
+
+nav > ul > li {
+  margin: 0 16px;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+nav > ul > li > a:hover {
+  animation-name: color-change;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes color-change {
+  from {
+    color: white;
+    font-size: 36px;
+  }
+  to {
+    color: lightgreen;
+    font-size: 40px;
+  }
+}
+
+#hamburger {
+  display: none;
+}
+
+#dropdown {
+  background-color: #233;
+  font-size: 36px;
+  height:18vh;
+  width: 100%;
+  display:none;
+  position: absolute;
+}
+
+#dropdown > ul > li{
+ display: flex;
+ justify-content: center;
+}
+#dropdown > ul > li > a{
+  text-decoration: none;
+  color: white;
+}
+
+#dropdown > ul > li > a:hover {
+  animation-name: color-change;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 768px) {
+  nav > ul {
+    display: none;
+  }
+  #hamburger {
+    margin-top: auto;
+    width: 60px;
+    height: 60px;
+    display:block;
+  }
+}

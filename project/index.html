@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/style/nav_style.css" />
+    <link rel="stylesheet" href="assets/style/home_style.css">
+    <script src="assets/script/animation.js"></script>
+  </head>
+  <body onload="onit();">
+    <nav>
+      <div id="logo"></div>
+      <svg id="hamburger" viewBox="0 0 120 120" fill="none" onclick="hamburger()">
+        <g id="Frame 1">
+          <rect
+            id="Rectangle1"
+            x="8"
+            y="22"
+            width="84"
+            height="10"
+            rx="5"
+            fill="white"
+          />
+          <rect
+            id="Rectangle2"
+            x="8"
+            y="50"
+            width="84"
+            height="10"
+            rx="5"
+            fill="white"
+          />
+          <rect
+            id="Rectangle3"
+            x="8"
+            y="78"
+            width="84"
+            height="10"
+            rx="5"
+            fill="white"
+          />
+        </g>
+      </svg>
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+    <div id="dropdown">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
